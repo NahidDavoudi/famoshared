@@ -1,0 +1,141 @@
+/* Famo Design System
+ * Canonical runtime tokens. Source of truth: famo/assets/design-tokens.json
+ * Every application should copy this file into its own asset pipeline.
+ */
+:root {
+  /* Primitive colors */
+  --ds-color-primary-50: #eff2f6;
+  --ds-color-primary-100: #dde3ed;
+  --ds-color-primary-200: #bbccda;
+  --ds-color-primary-300: #99b0c8;
+  --ds-color-primary-400: #7795b5;
+  --ds-color-primary-500: #5579a3;
+  --ds-color-primary-600: #445d84;
+  --ds-color-primary-700: #364a6a;
+  --ds-color-primary-800: #2a3a52;
+  --ds-color-primary-900: #1e2a3a;
+  --ds-color-primary-950: #111d2a;
+  --ds-color-primary-light-100: #efece4;
+  --ds-color-primary-light-200: #e2d9c6;
+  --ds-color-primary-light-300: #d4c9b2;
+  --ds-color-primary-light-500: #b8a98a;
+  --ds-color-accent-400: #976e61;
+  --ds-color-accent-500: #8b786d;
+  --ds-color-accent-600: #736158;
+  --ds-color-neutral-50: #fafafa;
+  --ds-color-neutral-100: #f5f5f5;
+  --ds-color-neutral-200: #e5e5e5;
+  --ds-color-neutral-300: #d4d4d4;
+  --ds-color-neutral-400: #a3a3a3;
+  --ds-color-neutral-500: #737373;
+  --ds-color-neutral-600: #525252;
+  --ds-color-neutral-700: #404040;
+  --ds-color-neutral-800: #262626;
+  --ds-color-neutral-900: #171717;
+  --ds-color-neutral-950: #0a0a0a;
+  --ds-color-white: #fff;
+  --ds-color-success-500: #10b981;
+  --ds-color-success-600: #059669;
+  --ds-color-warning-500: #f59e0b;
+  --ds-color-warning-600: #d97706;
+  --ds-color-error-500: #ef4444;
+  --ds-color-error-600: #dc2626;
+
+  /* Semantic colors */
+  --ds-color-background: var(--ds-color-primary-light-100);
+  --ds-color-foreground: var(--ds-color-neutral-900);
+  --ds-color-surface: var(--ds-color-white);
+  --ds-color-surface-muted: var(--ds-color-neutral-100);
+  --ds-color-primary: var(--ds-color-primary-600);
+  --ds-color-primary-hover: var(--ds-color-primary-700);
+  --ds-color-primary-active: var(--ds-color-primary-800);
+  --ds-color-primary-foreground: var(--ds-color-white);
+  --ds-color-accent: var(--ds-color-accent-500);
+  --ds-color-accent-hover: var(--ds-color-accent-600);
+  --ds-color-accent-foreground: var(--ds-color-white);
+  --ds-color-border: var(--ds-color-primary-light-200);
+  --ds-color-input: var(--ds-color-primary-light-200);
+  --ds-color-muted-foreground: var(--ds-color-neutral-500);
+  --ds-color-success: var(--ds-color-success-600);
+  --ds-color-warning: var(--ds-color-warning-600);
+  --ds-color-danger: var(--ds-color-error-600);
+  --ds-color-focus: var(--ds-color-primary-500);
+
+  /* Typography */
+  --ds-font-sans: "Vazirmatn", sans-serif;
+  --ds-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --ds-text-xs: 0.75rem;
+  --ds-text-sm: 0.875rem;
+  --ds-text-md: 1rem;
+  --ds-text-lg: 1.125rem;
+  --ds-text-xl: 1.25rem;
+  --ds-text-2xl: 1.5rem;
+  --ds-text-3xl: 1.875rem;
+  --ds-text-4xl: 2.25rem;
+  --ds-text-5xl: 3rem;
+  --ds-weight-regular: 400;
+  --ds-weight-medium: 500;
+  --ds-weight-semibold: 600;
+  --ds-weight-bold: 700;
+  --ds-leading-tight: 1.25;
+  --ds-leading-normal: 1.5;
+  --ds-leading-relaxed: 1.625;
+
+  /* Layout and motion */
+  --ds-space-1: 0.25rem;
+  --ds-space-2: 0.5rem;
+  --ds-space-3: 0.75rem;
+  --ds-space-4: 1rem;
+  --ds-space-5: 1.25rem;
+  --ds-space-6: 1.5rem;
+  --ds-space-8: 2rem;
+  --ds-space-10: 2.5rem;
+  --ds-space-12: 3rem;
+  --ds-space-16: 4rem;
+  --ds-radius-sm: 0.125rem;
+  --ds-radius-md: 0.375rem;
+  --ds-radius-lg: 0.5rem;
+  --ds-radius-xl: 0.75rem;
+  --ds-radius-2xl: 1rem;
+  --ds-radius-full: 9999px;
+  --ds-shadow-sm: 0 1px 2px rgb(0 0 0 / 0.05);
+  --ds-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --ds-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --ds-duration-fast: 150ms;
+  --ds-duration-normal: 200ms;
+  --ds-duration-slow: 300ms;
+  --ds-ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ds-content-max: 80rem;
+  --ds-focus-ring: 0 0 0 3px color-mix(in srgb, var(--ds-color-focus) 35%, transparent);
+}
+
+[data-theme="dark"] {
+  --ds-color-background: var(--ds-color-neutral-950);
+  --ds-color-foreground: var(--ds-color-neutral-50);
+  --ds-color-surface: var(--ds-color-neutral-900);
+  --ds-color-surface-muted: var(--ds-color-neutral-800);
+  --ds-color-primary: var(--ds-color-primary-500);
+  --ds-color-primary-hover: var(--ds-color-primary-400);
+  --ds-color-primary-active: var(--ds-color-primary-300);
+  --ds-color-primary-foreground: var(--ds-color-neutral-950);
+  --ds-color-border: var(--ds-color-neutral-800);
+  --ds-color-input: var(--ds-color-neutral-800);
+  --ds-color-muted-foreground: var(--ds-color-neutral-400);
+}
+
+/* Small, framework-neutral base contract. Apps may layer Tailwind on top. */
+html[dir="rtl"] { direction: rtl; }
+body {
+  background: var(--ds-color-background);
+  color: var(--ds-color-foreground);
+  font-family: var(--ds-font-sans);
+  line-height: var(--ds-leading-normal);
+}
+:where(button, a, input, select, textarea):focus-visible {
+  outline: 2px solid var(--ds-color-focus);
+  outline-offset: 2px;
+  box-shadow: var(--ds-focus-ring);
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

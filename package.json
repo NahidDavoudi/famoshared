@@ -1,0 +1,22 @@
+{
+  "name": "famo-shared-assets",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shared frontend libraries and build tools for Famo applications",
+  "scripts": {
+    "build:css": "tailwindcss -i ./css/input.css -o ./css/output.css",
+    "watch:css": "tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+  },
+  "dependencies": {
+    "apexcharts": "^4.7.0",
+    "date-fns-jalali": "^4.1.0-0",
+    "gsap": "^3.14.2",
+    "lucide": "^0.468.0",
+    "swiper": "^12.1.0",
+    "tabulator-tables": "^6.3.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
