@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+/* Shared Tailwind entry point. Product-specific sources belong in each app. */
+@source "../../public/**/*.php";
+@source "../../public/**/*.js";
+@source "../../admin/**/*.html";
+@source "../../admin/**/*.js";
+@source "../../dashboard/**/*.php";
+@source "../../dashboard/**/*.js";
+@source "../../plan/**/*.html";
+@source "../../login/**/*.php";
+
+@theme {
+  --font-sans: var(--ds-font-sans);
+  --color-primary: var(--ds-color-primary);
+  --color-primary-hover: var(--ds-color-primary-hover);
+  --color-primary-foreground: var(--ds-color-primary-foreground);
+  --color-primary-950: var(--ds-color-primary-950);
+  --color-primary-light: var(--ds-color-primary-light-200);
+  --color-accent: var(--ds-color-accent);
+  --color-success: var(--ds-color-success);
+  --color-warning: var(--ds-color-warning);
+  --color-danger: var(--ds-color-danger);
+  --color-background: var(--ds-color-background);
+  --color-foreground: var(--ds-color-foreground);
+  --color-surface: var(--ds-color-surface);
+  --color-surface-muted: var(--ds-color-surface-muted);
+  --color-border: var(--ds-color-border);
+  --color-input: var(--ds-color-input);
+  --color-muted-foreground: var(--ds-color-muted-foreground);
+}
