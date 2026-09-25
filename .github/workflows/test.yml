@@ -1,0 +1,30 @@
+name: FamoCDN CI
+
+on:
+  push:
+    branches:
+      - dev
+      - prod
+
+  pull_request:
+    branches:
+      - prod
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Environment
+        run: |
+          echo "Node: $(node --version)"
+          echo "NPM: $(npm --version)"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
