@@ -11,6 +11,16 @@
  *   await API.login('admin', '1234');
  */
 
+// ES modules are deferred, so DOMContentLoaded may have fired before their entry code runs.
+// Use onReady() rather than adding DOMContentLoaded listeners directly.
+export function onReady(callback) {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', callback);
+    } else {
+        callback();
+    }
+}
+
 function normalizeBase(url) {
     if (!url) return '';
     const trimmed = String(url).replace(/\/+$/, '');
