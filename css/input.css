@@ -4,7 +4,7 @@
 /* Shared Tailwind entry point. Product-specific sources belong in each app. */
 @source "../../public/**/*.php";
 @source "../../public/**/*.js";
-@source "../../admin/**/*.html";
+@source "../../admin/**/*.php";
 @source "../../admin/**/*.js";
 @source "../../dashboard/**/*.php";
 @source "../../dashboard/**/*.js";
